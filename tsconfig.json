@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./built",
+    "noResolve": false,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "allowJs": true,
+    "checkJs": true,
+    "jsx": "react",
+    "baseUrl": "./src",
+    "paths": {
+      "Actions/*": ["redux/actions/*"],
+      "Components/*": ["components/*"],
+      "Constants/*": ["constants/*"],
+      "Containers/*": ["containers/*"],
+      "Pages/*": ["pages/*"],
+      "Interfaces/*": ["interfaces/*"],
+      "Utils/*": ["utils/*"],
+      "Translations/*": ["translations/*"],
+      "Types/*": ["types/*"],
+      "Connection/*": ["connection/*"],
+      "Schemas/*": ["schemas/*"],
+      "Contexts/*": ["contexts/*"],
+      "Reducers/*": ["reducers/*"],
+      "Style/*": ["style/*"],
+      "Providers/*": ["providers/*"],
+      "VirtualApp/*": ["virtual-app/*"],
+      "ChatWidget/*": ["chat-widget/*"],
+      "Icons/*": ["icons/*"],
+      "Scss/*": ["scss/*"]
+    }
+  },
+  "exclude": [
+    "./node_modules/**/*",
+    "./public/**/*",
+    "./coverage/**/*",
+    "./__e2e__/*",
+    "dist"
+  ]
+}
